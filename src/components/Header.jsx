@@ -17,7 +17,7 @@ const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleNav = () => {
-    setNavOpen(prev => !prev);
+    setNavOpen((prev) => !prev);
   };
 
   return (
@@ -38,12 +38,10 @@ const Header = () => {
         </h1>
 
         <div className="relative md:justify-self-center">
-          <button
-            className="menu-btn md:hidden"
-            onClick={toggleNav}
-          >
+          <button className="menu-btn md:hidden" onClick={toggleNav}>
             <span className="material-symbols-rounded">
-                {navOpen ? 'close' : 'menu' }</span>
+              {navOpen ? "close" : "menu"}
+            </span>
           </button>
           <Navbar navOpen={navOpen} />
         </div>
