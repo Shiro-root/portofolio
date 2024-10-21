@@ -10,32 +10,32 @@ import SkillCard from "./SkillCard";
 
 const skillItem = [
   {
-    imgSrc: "/images/html-5.svg",
+    imgSrc: "./images/html-5.svg",
     label: "Html",
     desc: "Web Page Framework",
   },
   {
-    imgSrc: "/images/css3.svg",
+    imgSrc: "./images/css3.svg",
     label: "CSS",
     desc: "User Interface",
   },
   {
-    imgSrc: "/images/javascript.svg",
+    imgSrc: "./images/javascript.svg",
     label: "JavaScript",
     desc: "Interaction",
   },
   {
-    imgSrc: "/images/mongodb.svg",
+    imgSrc: "./images/mongodb.svg",
     label: "MongoDB",
     desc: "Database",
   },
   {
-    imgSrc: "/images/react.svg",
+    imgSrc: "./images/react.svg",
     label: "React",
     desc: "Framework",
   },
   {
-    imgSrc: "/images/tailwindcss.svg",
+    imgSrc: "./images/tailwindcss.svg",
     label: "TailwindCSS",
     desc: "User Interface",
   },

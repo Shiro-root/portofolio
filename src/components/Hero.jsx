@@ -3,14 +3,10 @@
  * @license Apache-2.0
  */
 
-
 /**
  * Components
  */
 import { ButtonPrimary, ButtonOutline } from "./Button";
-
-
-
 
 const Hero = () => {
   return (
@@ -20,7 +16,7 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg">
               <img
-                src="/images/avatar-1.png"
+                src="./images/avatar-1.png"
                 width={40}
                 height={59}
                 alt="Dewangga Tirta Kencana Potrait"
@@ -35,26 +31,28 @@ const Hero = () => {
               Available for work
             </div>
           </div>
-          <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">Front end Developer</h2>
+          <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
+            Front end Developer
+          </h2>
 
           <div className="flex items-center gap-3">
-            <ButtonPrimary 
-            label="Download CV"
-            icon="download"
-            href="https://drive.google.com/file/d/1OcxsGpZiNI2K0n8OOJPqAwAhZZfvxqKP/view?usp=drive_link"/>
-            <ButtonOutline 
-            href="#about"
-            label="Scroll down"
-            icon="arrow_downward"/>
-            
-            
-            </div>
+            <ButtonPrimary
+              label="Download CV"
+              icon="download"
+              href="https://drive.google.com/file/d/1OcxsGpZiNI2K0n8OOJPqAwAhZZfvxqKP/view?usp=drive_link"
+            />
+            <ButtonOutline
+              href="#about"
+              label="Scroll down"
+              icon="arrow_downward"
+            />
+          </div>
         </div>
 
         <div className="hidden lg:block">
           <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to 65% rounded-[60px] overflow-hidden">
             <img
-              src="/images/hero-banner.png"
+              src="./images/hero-banner.png"
               width={420}
               height={800}
               alt="Dewangga Tirta Kencana"
