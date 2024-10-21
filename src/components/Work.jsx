@@ -11,15 +11,15 @@ import ProjectCard from "./ProjectCard";
 const works = [
   {
     imgSrc: "/images/project-1.jpg",
-    title: "Full stack music app",
-    tags: ["API", "MVC", "Development"],
-    projectLink: "https://musify-5al0.onrender.com/",
+    title: "Web Portofolio",
+    tags: ["Html", "Css", "Javascript"],
+    projectLink: "https://shiro-root.github.io/portofoliodewangga/",
   },
   {
     imgSrc: "/images/project-2.jpg",
-    title: "Free stock photo app",
-    tags: ["API", "SPA"],
-    projectLink: "https://pixstock-official.vercel.app/",
+    title: "Bookshelf App",
+    tags: ["Tailwind", "Local Storage", "Javascript", "html"],
+    projectLink: "https://shiro-root.github.io/tugasbook/",
   },
   {
     imgSrc: "/images/project-3.jpg",
@@ -60,7 +60,7 @@ const Work = () => {
               imgSrc={imgSrc}
               title={title}
               tags={tags}
-              projectlink={projectLink}
+              projectLink={projectLink}
             />
           ))}
         </div>

@@ -11,6 +11,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skill from "./components/Skill";
 import Work from "./components/Work";
+import Sertificat from "./components/Sertificat";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <About />
         <Skill />
         <Work />
+        <Sertificat />
       </main>
     </>
   );
