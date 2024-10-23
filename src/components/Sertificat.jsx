@@ -51,6 +51,12 @@ const sertificat = [
     sertificatLink:
       "https://drive.google.com/file/d/1tutTytJbGvFjGQu-2kCaRlqPQhtpGQSb/view?usp=sharing",
   },
+  {
+    imgSrc: "./images/sertificat-8.png",
+    title: "Mikrotik ",
+    sertificatLink:
+      "https://drive.google.com/file/d/1qfJ-akYZ8LZWBnj9ZF8lAUO8-7ez4NI6/view?usp=drive_link",
+  },
 ];
 
 const Sertificat = () => {
