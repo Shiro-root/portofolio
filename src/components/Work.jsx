@@ -23,9 +23,9 @@ const works = [
   },
   {
     imgSrc: "./images/project-3.jpg",
-    title: "Recipe app",
-    tags: ["Development", "API"],
-    projectLink: "",
+    title: "Website Portofolio ",
+    tags: ["Html, Css, Javascript"],
+    projectLink: "https://shiro-root.github.io/mywebsite/",
   },
   {
     imgSrc: "./images/project-4.jpg",
