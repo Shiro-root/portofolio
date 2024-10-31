@@ -57,6 +57,12 @@ const sertificat = [
     sertificatLink:
       "https://drive.google.com/file/d/1qfJ-akYZ8LZWBnj9ZF8lAUO8-7ez4NI6/view?usp=drive_link",
   },
+  {
+    imgSrc: "./images/sertificat-9.png",
+    title: "React Beginner ",
+    sertificatLink:
+      "https://drive.google.com/file/d/1ZXzvKMfddzgnaBvyE3rC5WLSVkELLyq1/view?usp=drive_link",
+  },
 ];
 
 const Sertificat = () => {
