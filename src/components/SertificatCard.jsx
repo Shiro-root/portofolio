@@ -16,7 +16,7 @@ const SertificatCard = ({ imgSrc, title, sertificatLink, classes = "" }) => {
         classes
       }
     >
-      <figure className="w-full rounded-lg mb-4 overflow-hidden aspect-w-16 aspect-h-9">
+      <figure className="w-full h-48 rounded-lg mb-4 overflow-hidden">
         <img
           src={imgSrc}
           alt={title}
