@@ -11,7 +11,7 @@ import ProjectCard from "./ProjectCard";
 const works = [
   {
     imgSrc: "./images/project-1.jpg",
-    title: "Web Portofolio",
+    title: "Web Portofolio v2",
     tags: ["Html", "Css", "Javascript"],
     projectLink: "https://shiro-root.github.io/portofoliodewangga/",
   },
@@ -23,9 +23,15 @@ const works = [
   },
   {
     imgSrc: "./images/project-3.jpg",
-    title: "Website Portofolio ",
+    title: "Website Portofolio v1 ",
     tags: ["Html, Css, Javascript"],
     projectLink: "https://shiro-root.github.io/mywebsite/",
+  },
+  {
+    imgSrc: "./images/project-4.jpg",
+    title: "Fighting Game  ",
+    tags: ["Html canvas, Css, Javascript"],
+    projectLink: "https://fighting-game-dewangga.netlify.app/",
   },
  
 ];
