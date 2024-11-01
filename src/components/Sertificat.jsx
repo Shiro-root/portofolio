@@ -61,7 +61,7 @@ const sertificat = [
     imgSrc: "./images/sertificat-9.png",
     title: "React Beginner ",
     sertificatLink:
-      "https://drive.google.com/file/d/1ZXzvKMfddzgnaBvyE3rC5WLSVkELLyq1/view?usp=drive_link",
+      "https://drive.google.com/file/d/1Jx0dJjsGg0uj-0JyRlT7jU7myL0CV1qk/view?usp=drive_link",
   },
 ];
 
