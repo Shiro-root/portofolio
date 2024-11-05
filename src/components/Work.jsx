@@ -33,7 +33,12 @@ const works = [
     tags: ["Html canvas, Css, Javascript"],
     projectLink: "https://fighting-game-dewangga.netlify.app/",
   },
- 
+  {
+    imgSrc: "./images/project-5.png",
+    title: "Seahorse CyberPunk  ",
+    tags: ["Html canvas, Css, Javascript"],
+    projectLink: "https://shiro-root.github.io/javascript-seahorse/",
+  },
 ];
 
 const Work = () => {
