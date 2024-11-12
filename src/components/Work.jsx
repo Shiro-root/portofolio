@@ -1,14 +1,7 @@
-/**
- * @copyright 2024 Dewangga Tirta Kencana
- * @license Apache-2.0
- */
-
-/**
- * Component
- */
+import React, { useState } from 'react';
 import ProjectCard from "./ProjectCard";
 
-const works = [
+const initialWorks = [
   {
     imgSrc: "./images/project-1.jpg",
     title: "Web Portofolio v2",
@@ -43,18 +36,24 @@ const works = [
     imgSrc: "./images/project-6.png",
     title: "Portofolio V3  ",
     tags: ["Html, Css "],
-    projectLink: "https://shiro-root.github.io/portofoliosimplee/",
+    projectLink: "https://shiro-root.github.io/javascript-seahorse/",
   },
 ];
 
 const Work = () => {
+  const [visibleWorks, setVisibleWorks] = useState(3);
+
+  const loadMoreWorks = () => {
+    setVisibleWorks((prevVisibleWorks) => prevVisibleWorks + 3);
+  };
+
   return (
     <section id="work" className="section">
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">My portfolio highlights</h2>
 
         <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-          {works.map(({ imgSrc, title, tags, projectLink }, key) => (
+          {initialWorks.slice(0, visibleWorks).map(({ imgSrc, title, tags, projectLink }, key) => (
             <ProjectCard
               key={key}
               imgSrc={imgSrc}
@@ -65,6 +64,14 @@ const Work = () => {
             />
           ))}
         </div>
+
+        {visibleWorks < initialWorks.length && (
+          <div className="text-center mt-8">
+            <button onClick={loadMoreWorks} className="btn btn-primary">
+              Load More
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,37 +1,49 @@
-/**
- * @copyright 2024 Dewangga Tirta Kencana
- * @license Apache-2.0
- */
-
-/**
- * Node modules
- */
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const Navbar = ({ navOpen }) => {
-  const lastActiveLink = useRef();
-  const activeBox = useRef();
+  const lastActiveLink = useRef(null);
+  const activeBox = useRef(null);
 
+  // Inisialisasi posisi box aktif
   const initActiveBox = () => {
-    activeBox.current.style.top = lastActiveLink.current.offsetTop + "px";
-    activeBox.current.style.left = lastActiveLink.current.offsetLeft + "px";
-    activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
-    activeBox.current.style.height = lastActiveLink.current.offsetHeight + "px";
+    if (lastActiveLink.current && activeBox.current) {
+      activeBox.current.style.top = lastActiveLink.current.offsetTop + "px";
+      activeBox.current.style.left = lastActiveLink.current.offsetLeft + "px";
+      activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
+      activeBox.current.style.height = lastActiveLink.current.offsetHeight + "px";
+    }
   };
 
-  useEffect(initActiveBox, []);
-  window.addEventListener("resize", initActiveBox);
+  // Menjalankan inisialisasi ketika komponen pertama kali dimuat
+  useEffect(() => {
+    initActiveBox();
 
+    // Menambahkan event listener resize untuk memperbarui posisi box aktif
+    const handleResize = () => {
+      initActiveBox();
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Fungsi untuk menandai link yang aktif
   const activeCurrentLink = (event) => {
-    lastActiveLink.current?.classList.remove("active");
+    if (lastActiveLink.current) {
+      lastActiveLink.current.classList.remove("active");
+    }
+
     event.target.classList.add("active");
     lastActiveLink.current = event.target;
 
-    activeBox.current.style.top = event.target.offsetTop + "px";
-    activeBox.current.style.left = event.target.offsetLeft + "px";
-    activeBox.current.style.width = event.target.offsetWidth + "px";
-    activeBox.current.style.height = event.target.offsetHeight + "px";
+    // Perbarui posisi active-box
+    if (activeBox.current) {
+      activeBox.current.style.top = event.target.offsetTop + "px";
+      activeBox.current.style.left = event.target.offsetLeft + "px";
+      activeBox.current.style.width = event.target.offsetWidth + "px";
+      activeBox.current.style.height = event.target.offsetHeight + "px";
+    }
   };
 
   const navItems = [
