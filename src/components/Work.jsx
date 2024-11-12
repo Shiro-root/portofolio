@@ -39,6 +39,12 @@ const works = [
     tags: ["Html canvas, Css, Javascript"],
     projectLink: "https://shiro-root.github.io/javascript-seahorse/",
   },
+  {
+    imgSrc: "./images/project-6.png",
+    title: "Portofolio V3  ",
+    tags: ["Html, Css "],
+    projectLink: "https://shiro-root.github.io/portofoliosimplee/",
+  },
 ];
 
 const Work = () => {
