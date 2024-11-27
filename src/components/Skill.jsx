@@ -25,11 +25,6 @@ const skillItem = [
     desc: "Interaction",
   },
   {
-    imgSrc: "./images/mongodb.svg",
-    label: "MongoDB",
-    desc: "Database",
-  },
-  {
     imgSrc: "./images/react.svg",
     label: "React",
     desc: "Framework",
@@ -54,7 +49,13 @@ const Skill = () => {
 
         <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(350px,1fr))]">
           {skillItem.map(({ imgSrc, label, desc }, key) => (
-            <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc} classes="reveal-up"/>
+            <SkillCard
+              key={key}
+              imgSrc={imgSrc}
+              label={label}
+              desc={desc}
+              classes="reveal-up"
+            />
           ))}
         </div>
       </div>

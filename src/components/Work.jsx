@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 
 const initialWorks = [
@@ -36,7 +36,7 @@ const initialWorks = [
     imgSrc: "./images/project-6.png",
     title: "Portofolio V3  ",
     tags: ["Html, Css "],
-    projectLink: "https://shiro-root.github.io/javascript-seahorse/",
+    projectLink: "https://shiro-root.github.io/portofoliosimplee/",
   },
 ];
 
@@ -53,16 +53,18 @@ const Work = () => {
         <h2 className="headline-2 mb-8 reveal-up">My portfolio highlights</h2>
 
         <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-          {initialWorks.slice(0, visibleWorks).map(({ imgSrc, title, tags, projectLink }, key) => (
-            <ProjectCard
-              key={key}
-              imgSrc={imgSrc}
-              title={title}
-              tags={tags}
-              projectLink={projectLink}
-              classes="reveal-up"
-            />
-          ))}
+          {initialWorks
+            .slice(0, visibleWorks)
+            .map(({ imgSrc, title, tags, projectLink }, key) => (
+              <ProjectCard
+                key={key}
+                imgSrc={imgSrc}
+                title={title}
+                tags={tags}
+                projectLink={projectLink}
+                classes="reveal-up"
+              />
+            ))}
         </div>
 
         {visibleWorks < initialWorks.length && (
